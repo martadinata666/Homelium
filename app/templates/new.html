@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="group">
+    <h1>New app</h1>
+
+    <div class="group-apps">
+        <form action="{{ url_for('add') }}" enctype="multipart/form-data" method="post">
+            <div class="app">
+                <img src="static/img/groups.png" class="app-img">
+                <input class="add-input" type="text" placeholder="Group" name="group">
+            </div>
+            <div class="app">
+                <img src="static/img/default.png" class="app-img">
+                <input class="add-input" type="text" placeholder="Name" name="name">
+            </div>
+            <div class="app">
+                <img src="static/img/image.png" class="app-img">
+                <input class="add-input" type="text" placeholder="Image" name="image">
+            </div>
+            <div class="app">
+                <img src="static/img/url.png" class="app-img">
+                <input class="add-input" type="text" placeholder="Url" name="url">
+            </div>
+            <input class="add-button" type="submit" value="Add">
+        </form>
+    </div>
+</div>
+
+{% endblock %}

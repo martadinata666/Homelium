@@ -4,12 +4,12 @@
         "apps": [
             {
                 "name": "Nginx Proxy Manager",
-                "image": "static/default.png",
+                "image": "static/img/default.png",
                 "url": "https://nginxproxymanager.com/"
             },
             {
                 "name": "Portainer",
-                "image": "static/default.png",
+                "image": "static/img/default.png",
                 "url": "https://www.portainer.io"
             }
         ]
@@ -19,12 +19,12 @@
         "apps": [
             {
                 "name": "Apache Guacamole",
-                "image": "static/default.png",
+                "image": "static/img/default.png",
                 "url": "https://guacamole.apache.org/"
             },
             {
                 "name": "Wordpess",
-                "image": "static/default.png",
+                "image": "static/img/default.png",
                 "url": "https://wordpress.org/"
             }
         ]

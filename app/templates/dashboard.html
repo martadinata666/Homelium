@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="group">
+    {% for group in links_dict %}
+        <h1>{{ group['name'] }}</h1>
+
+        <div class="group-apps">
+            {% for app in group["apps"] %}
+                <a class="app" href="{{ app['url'] }}" target="_blank">
+                    <img src="{{ app['image'] }}" class="app-img"/>
+                    <h2>{{ app['name'] }}</h2>
+                </a>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>
+
+<div>
+    <a href="new"><button class="button-add">+</button></a>
+</div>
+{% endblock %}
