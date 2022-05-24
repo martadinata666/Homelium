@@ -1,0 +1,32 @@
+[
+    {
+        "name": "//First Group",
+        "apps": [
+            {
+                "name": "Nginx Proxy Manager",
+                "image": "static/default.png",
+                "url": "https://nginxproxymanager.com/"
+            },
+            {
+                "name": "Portainer",
+                "image": "static/default.png",
+                "url": "https://www.portainer.io"
+            }
+        ]
+    },
+    {
+        "name": "//Second Group",
+        "apps": [
+            {
+                "name": "Apache Guacamole",
+                "image": "static/default.png",
+                "url": "https://guacamole.apache.org/"
+            },
+            {
+                "name": "Wordpess",
+                "image": "static/default.png",
+                "url": "https://wordpress.org/"
+            }
+        ]
+    }
+]

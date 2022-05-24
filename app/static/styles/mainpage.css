@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+body {
+    background: url(../wallpaper.jpeg) no-repeat center center fixed;
+    background-size: cover;
+
+    font-family: 'Raleway', sans-serif;
+}
+
+.group {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 15px;
+    color: white;
+}
+/*
+.group-apps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.app {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 24px 12px 24px;
+    margin: 12px;
+
+    width: 400px;
+
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    text-align: left;
+    font-size: 12px;
+    font-weight: 100;
+
+    border-radius: 12px;
+}
+
+.app-img {
+    height: 48px;
+}
+
+@media (min-width: 651px) {
+    .group-apps {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .group {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+        font-size: 15px;
+        color: white;
+    }
+    
+    .app {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 12px;
+    
+        padding: 12px 24px 12px 24px;
+        margin: 12px;
+    
+        width: auto;
+    
+        text-decoration: none;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+    
+        text-align: left;
+        font-size: 12px;
+        font-weight: 100;
+    
+        border-radius: 12px;
+    }
+  }
