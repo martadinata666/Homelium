@@ -12,6 +12,8 @@
 
 <!-- Content -->
 
+![desktop image](https://github.com/MarcOrfilaCarreras/Homelium/blob/repository/img/desktop.png?raw=true)
+
 ## Getting Started
 
 > This design is inspired by [Walkx](https://github.com/WalkxCode).
