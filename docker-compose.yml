@@ -3,8 +3,8 @@ version: "3.7"
 services:
   homelium:
     container_name: Homelium
-    image: homelium:latest
+    image: ghcr.io/marcorfilacarreras/homelium:amd64
     ports:
       - 8000:5000
     volumes:
-      - ${PWD}/test.json:/app/app/config.json:rw
+      - ${PWD}/config.json:/app/app/config.json:rw
