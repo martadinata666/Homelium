@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  homelium:
+    container_name: Homelium
+    image: homelium:latest
+    ports:
+      - 8000:5000
+    volumes:
+      - ${PWD}/test.json:/app/app/config.json:rw
