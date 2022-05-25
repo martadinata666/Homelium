@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+{% for message in get_flashed_messages() %}
+<div class="alert" id="alert">
+    <h2>Error</h2>
+    <h5>{{ message }}</h5>
+</div>
+{% endfor %}
+
 <div class="group">
     {% for group in links_dict %}
         <h1>{{ group['name'] }}</h1>

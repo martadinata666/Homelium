@@ -1,5 +1,5 @@
 import json
-from flask import redirect, render_template, request
+from flask import flash, redirect, render_template, request
 import requests
 
 def mainpage():
@@ -10,11 +10,15 @@ def addApp():
     with open("app/config.json", 'r') as f:
         links_dict = json.load(f)
 
-    response = requests.get(request.form["image"])
+    try:
+        response = requests.get(request.form["image"])
 
-    file = open("app/static/img/" + request.form["name"] + ".png", "wb")
-    file.write(response.content)
-    file.close()
+        file = open("app/static/img/" + request.form["name"] + ".png", "wb")
+        file.write(response.content)
+        file.close()
+    
+    except:
+        flash("The image couldn't be downloaded !")
 
     counter = 0
     found = False
