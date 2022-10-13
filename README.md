@@ -18,6 +18,7 @@
 * Added favicon
 * Disable image check
 * Prefer download all image from [walkxcode dashboard icon](https://github.com/walkxcode/Dashboard-Icons) rather than fetching from net
+* Use ubuntu font
 
 ## Getting Started
 
