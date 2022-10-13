@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
 
+
+a:link, a:visited {
+  color: white;
+  text-decoration: underline;
+  cursor: auto;
+}
+
 body {
     background: url(../img/wallpaper.jpeg) no-repeat center center fixed;
     background-size: cover;
