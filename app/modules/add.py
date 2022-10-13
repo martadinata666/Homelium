@@ -13,7 +13,7 @@ def addApp():
     try:
         response = requests.get(request.form["image"])
 
-        file = open("app/static/img/" + request.form["name"] + ".png", "wb")
+        file = open("app/static/icons/" + request.form["name"] + ".png", "wb")
         file.write(response.content)
         file.close()
     
@@ -27,7 +27,7 @@ def addApp():
 
             found = True
 
-            links_dict[counter]["apps"].append({"name":request.form["name"], "image":"static/img/" + request.form["name"] + ".png", "url":request.form["url"]})
+            links_dict[counter]["apps"].append({"name":request.form["name"], "image":"static/icons/" + request.form["name"] + ".png", "url":request.form["url"]})
 
             with open("app/config.json", 'w', encoding='utf-8') as f:
                 json.dump(links_dict, f, ensure_ascii=False, indent=4)
@@ -36,7 +36,7 @@ def addApp():
     
     if found == False:
         links_dict.append({"name":request.form["group"], "apps":[]})
-        links_dict[counter]["apps"].append({"name":request.form["name"], "image":"static/img/" + request.form["name"] + ".png", "url":request.form["url"]})
+        links_dict[counter]["apps"].append({"name":request.form["name"], "image":"static/icons/" + request.form["name"] + ".png", "url":request.form["url"]})
         
         with open("app/config.json", 'w', encoding='utf-8') as f:
             json.dump(links_dict, f, ensure_ascii=False, indent=4)
