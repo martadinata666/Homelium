@@ -14,6 +14,11 @@
 
 ![desktop image](https://github.com/MarcOrfilaCarreras/Homelium/blob/repository/img/desktop.png?raw=true)
 
+## Forked to add my liking
+* Added favicon
+* Disable image check
+* Prefer download all image from [walkxcode dashboard icon](https://github.com/walkxcode/Dashboard-Icons) rather than fetching from net
+
 ## Getting Started
 
 > This design is inspired by [Walkx](https://github.com/WalkxCode).
